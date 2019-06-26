@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --calculator-width: 360px;
+  --border-color: gray;
+  --debug-color-1 : rgba(170,255,0,0.2);
+  --debug-color-2 : rgba(255,170,0,0.2);
+  --debug-color-3 : rgba(255,0,170,0.2);
+  --debug-color-4 : rgba(170,0,255,0.2);
+  --debug-color-5 : rgba(0,170,255,0.2);
+
+}
+
+.calculator-container {
+  border: 1px solid var(--border-color);
+  display: grid; 
+  margin: 120px auto;
+  width: var(--calculator-width);
+}
+
+.calculator-display {
+  /* background: var(--debug-color-3); */
+  font-size: 24px;
+  line-height: calc(var(--calculator-width)/4);
+  height: calc(var(--calculator-width)/4);
+  padding-right: calc(var(--calculator-width)/18);
+  text-align: right;
+  
+}
+
+.calculator-row {
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  line-height: calc(var(--calculator-width)/4);
+  height: calc(var(--calculator-width)/4);
+  /* grid-template-columns: repeat(4,auto); */
+}
+
+/* .calculator-row:nth-child(odd) {background-color: var(--debug-color-2); }
+.calculator-row:nth-child(even) {background-color: var(--debug-color-4); } */
+
+.calculator-box {
+  border-left: 1px solid var(--border-color);
+  box-sizing: border-box;
+  height: calc(var(--calculator-width)/4);
+  width: calc(var(--calculator-width)/4);
+}
+
+.calculator-box:first-child {
+  border-left: none;
+}
