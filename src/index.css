@@ -17,10 +17,9 @@ code {
   --border-color: gray;
   --debug-color-1 : rgba(170,255,0,0.2);
   --debug-color-2 : rgba(255,170,0,0.2);
-  --debug-color-3 : rgba(255,0,170,0.2);
+  --debug-color-3 : rgba(0,170,255,0.2);
   --debug-color-4 : rgba(170,0,255,0.2);
   --debug-color-5 : rgba(0,170,255,0.2);
-
 }
 
 .calculator-container {
@@ -30,28 +29,27 @@ code {
   width: var(--calculator-width);
 }
 
-.calculator-display {
-  /* background: var(--debug-color-3); */
-  font-size: 24px;
-  line-height: calc(var(--calculator-width)/4);
-  height: calc(var(--calculator-width)/4);
-  padding-right: calc(var(--calculator-width)/18);
-  text-align: right;
-  
+.calculator-display--screen {
+  padding: calc(var(--calculator-width)/18) 0;
 }
 
+.calculator-display,
+.calculator-computation {
+  padding-right: calc(var(--calculator-width)/18);
+  text-align: right;
+}
+.calculator-display {
+  font-size: 24px;
+  padding-bottom: calc(var(--calculator-width)/18); 
+}
 .calculator-row {
   border-top: 1px solid var(--border-color);
   display: flex;
   line-height: calc(var(--calculator-width)/4);
   height: calc(var(--calculator-width)/4);
-  /* grid-template-columns: repeat(4,auto); */
 }
 
-/* .calculator-row:nth-child(odd) {background-color: var(--debug-color-2); }
-.calculator-row:nth-child(even) {background-color: var(--debug-color-4); } */
-
-.calculator-box {
+.calculator-keypad {
   border-left: 1px solid var(--border-color);
   box-sizing: border-box;
   height: calc(var(--calculator-width)/4);
@@ -60,4 +58,8 @@ code {
 
 .calculator-box:first-child {
   border-left: none;
+}
+
+button {
+  cursor: pointer;
 }
