@@ -4,7 +4,7 @@ import ResultScreen from './ResultScreen'
 import ComputationScreen from './ComputationScreen'
 
 const Screen = (props) => 
-<div className="calculator-display--screen">
+<div className="calculator__display">
     <ResultScreen>{props.result}</ResultScreen>
     <ComputationScreen>{props.computation}</ComputationScreen>
 </div>

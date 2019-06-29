@@ -13,53 +13,87 @@ code {
 }
 
 :root {
-  --calculator-width: 360px;
-  --border-color: gray;
-  --debug-color-1 : rgba(170,255,0,0.2);
-  --debug-color-2 : rgba(255,170,0,0.2);
-  --debug-color-3 : rgba(0,170,255,0.2);
-  --debug-color-4 : rgba(170,0,255,0.2);
-  --debug-color-5 : rgba(0,170,255,0.2);
+  --calculator-width: 316px;
+  --iphone-pink: rgb(255, 60, 123);
+  --iphone-grey: rgb(247, 247, 247);
+  --white: rgb(255, 255, 255);
+  --border-radius: 10px;
 }
 
-.calculator-container {
-  border: 1px solid var(--border-color);
-  display: grid; 
-  margin: 120px auto;
+.calculator {
+  /* border: 1px solid var(--border-color); */
+  background: url(./iphonex.png) no-repeat;
+  height: 680px;
+  margin: 30px auto;
+  padding: 36px 0;
+  width: 360px;
+}
+
+.calculator__display,
+.calculator__computation {
+  display: grid;
   width: var(--calculator-width);
+  margin: 20px;
 }
 
-.calculator-display--screen {
-  padding: calc(var(--calculator-width)/18) 0;
+.calculator__computation {
+  background-color: var(--white);
+  border-radius: 0 0 32px 32px;
+  height: 466px;
+  
 }
 
-.calculator-display,
-.calculator-computation {
+.calculator__display-screen,
+.calculator__computation-screen {
   padding-right: calc(var(--calculator-width)/18);
   text-align: right;
+  min-height: calc(var(--calculator-width)/15);
 }
-.calculator-display {
-  font-size: 24px;
+.calculator__display-screen {
+  font-size: 48px;
   padding-bottom: calc(var(--calculator-width)/18); 
 }
-.calculator-row {
-  border-top: 1px solid var(--border-color);
+
+.calculator__display {
+  color: var(--white);
+  height: 100px;
+  margin-top: 76px;
+}
+
+.calculator__row {
+  /* border-top: 1px solid var(--border-color); */
+  align-items: center;
   display: flex;
   line-height: calc(var(--calculator-width)/4);
-  height: calc(var(--calculator-width)/4);
+  justify-content: space-around;
 }
 
-.calculator-keypad {
-  border-left: 1px solid var(--border-color);
+.calculator__keypad {
+  /* border-left: 1px solid var(--border-color); */
+  border-radius: 50%;
   box-sizing: border-box;
-  height: calc(var(--calculator-width)/4);
-  width: calc(var(--calculator-width)/4);
+  height: calc(var(--calculator-width)/6);
+  font-size: calc(var(--calculator-width)/20);
+  width: calc(var(--calculator-width)/6);
+
 }
 
-.calculator-box:first-child {
-  border-left: none;
+.calculator__keypad.large {
+  border-radius: var(--border-radius);
+  width: calc(var(--calculator-width)/2.8);
 }
+
+.calculator__keypad.operator {
+  background-color: var(--iphone-pink);
+  color: var(--white);
+}
+
+/* .calculator-box:first-child {
+  border-left: none;
+} */
 
 button {
+  background-color: var(--iphone-grey);
+  border: none;
   cursor: pointer;
 }
