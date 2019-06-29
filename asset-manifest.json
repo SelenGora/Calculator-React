@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Calculator-React/static/css/main.3f209e19.chunk.css",
-    "main.js": "/Calculator-React/static/js/main.4042b72f.chunk.js",
-    "main.js.map": "/Calculator-React/static/js/main.4042b72f.chunk.js.map",
+    "main.js": "/Calculator-React/static/js/main.dfefd1d0.chunk.js",
+    "main.js.map": "/Calculator-React/static/js/main.dfefd1d0.chunk.js.map",
     "runtime~main.js": "/Calculator-React/static/js/runtime~main.81ca5fbe.js",
     "runtime~main.js.map": "/Calculator-React/static/js/runtime~main.81ca5fbe.js.map",
     "static/js/2.fdfc7398.chunk.js": "/Calculator-React/static/js/2.fdfc7398.chunk.js",
     "static/js/2.fdfc7398.chunk.js.map": "/Calculator-React/static/js/2.fdfc7398.chunk.js.map",
     "index.html": "/Calculator-React/index.html",
-    "precache-manifest.e6fd2b41fe4707969e6a669207e60769.js": "/Calculator-React/precache-manifest.e6fd2b41fe4707969e6a669207e60769.js",
+    "precache-manifest.bd9ed66169712ac440165e3804bb2b3c.js": "/Calculator-React/precache-manifest.bd9ed66169712ac440165e3804bb2b3c.js",
     "service-worker.js": "/Calculator-React/service-worker.js",
     "static/css/main.3f209e19.chunk.css.map": "/Calculator-React/static/css/main.3f209e19.chunk.css.map",
     "static/media/index.css": "/Calculator-React/static/media/iphonex.5dae4342.png"
