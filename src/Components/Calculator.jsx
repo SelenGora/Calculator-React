@@ -7,7 +7,7 @@ import Keypad from './Keypad'
 class Calculator extends React.Component {
 		state = {
 			computation : '',
-			result : 1
+			result : 0
 		}
 
 		/*eslint no-eval: 0*/
