@@ -1,6 +1,6 @@
 {
   "homepage" : "https://selengora.github.io/Calculator-React",
-  "name": "Calculator-React",
+  "name": "calculator-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
