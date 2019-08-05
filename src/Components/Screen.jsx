@@ -5,8 +5,9 @@ import ComputationScreen from './ComputationScreen'
 
 const Screen = (props) => 
 <div className="calculator__display">
-    <ResultScreen>{props.result}</ResultScreen>
-    <ComputationScreen>{props.computation}</ComputationScreen>
+    <ComputationScreen>{props.formula}</ComputationScreen>
+    <ResultScreen>{props.currentValue}</ResultScreen>
+    
 </div>
 
 export default Screen
